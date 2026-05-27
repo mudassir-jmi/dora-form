@@ -34,7 +34,7 @@ import { cn } from "~/lib/utils";
 
 function BrandMark() {
   return (
-    <span className="flex size-7 items-center justify-center rounded-md border border-rose-500/30 bg-rose-500/10">
+    <span className="flex size-7 items-center justify-center rounded-md border border-sky-500/30 bg-sky-500/10">
       <IconForms className="size-4 text-sky-500" stroke={1.75} />
     </span>
   );
@@ -58,7 +58,7 @@ function NavLinks({
             key={item.href}
             href={href}
             onClick={onNavigate}
-            className="text-sm text-zinc-400 transition-colors hover:text-white"
+            className="text-sm text-slate-300 transition-colors hover:text-white"
           >
             {item.label}
           </a>
@@ -168,7 +168,7 @@ export function MainNavbar() {
                   onClick={() => {
                     signOut();
                   }}
-                  className="cursor-pointer text-rose-400 hover:text-rose-500 focus:text-rose-500"
+                  className="cursor-pointer text-amber-300 hover:text-amber-400 focus:text-amber-400"
                 >
                   <IconLogout className="mr-2 size-4" />
                   Log out
@@ -188,7 +188,7 @@ export function MainNavbar() {
               <Button
                 variant="outline"
                 size="icon-sm"
-                className="border-zinc-700 bg-zinc-900 lg:hidden"
+                className="border-sky-700 bg-sky-900 lg:hidden"
                 aria-label="Open menu"
               >
                 <IconMenu2 className="size-4" />
@@ -204,7 +204,7 @@ export function MainNavbar() {
               <div className="flex-1 overflow-y-auto px-5 pb-8 flex flex-col gap-6 mt-4">
                 <NavLinks onNavigate={() => setSheetOpen(false)} />
                 <div className="flex flex-col gap-2 border-t border-sky-700 pt-6">
-                  <Button variant="outline" asChild className="border-zinc-700">
+                  <Button variant="outline" asChild className="border-sky-700">
                     <Link href="/explore" onClick={() => setSheetOpen(false)}>
                       Explore
                     </Link>
