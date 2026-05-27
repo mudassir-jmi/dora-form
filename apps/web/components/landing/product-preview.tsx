@@ -46,7 +46,7 @@ export function ProductPreview() {
               Published
             </span>
             <span className="flex items-center gap-1 rounded-md border border-border bg-card px-3 py-1.5 text-xs text-muted-foreground">
-              <IconCheck className="size-3.5 text-rose-500" />
+              <IconCheck className="size-3.5 text-amber-300" />
               Saved
             </span>
           </div>
@@ -79,7 +79,7 @@ export function ProductPreview() {
                   </p>
                 </div>
                 <div
-                  className="h-5 w-9 shrink-0 rounded-full bg-rose-500/80 p-0.5"
+                  className="h-5 w-9 shrink-0 rounded-full bg-sky-500/80 p-0.5"
                   aria-hidden
                 >
                   <div className="ml-auto size-4 rounded-full bg-white shadow-sm" />

@@ -59,12 +59,12 @@ export function PricingSection() {
                 )}
               >
                 {isRecommended ? (
-                  <Badge className="absolute top-4 right-4 rounded-md border-amber-500/30 bg-gradient-to-r from-rose-500/20 to-amber-500/15 text-[10px] font-semibold uppercase text-amber-200">
+                  <Badge className="absolute top-4 right-4 rounded-md border-amber-500/30 bg-gradient-to-r from-sky-500/20 to-amber-500/15 text-[10px] font-semibold uppercase text-amber-200">
                     Recommended
                   </Badge>
                 ) : null}
                 {isCurrent ? (
-                  <Badge className="absolute top-4 right-4 rounded-md bg-white text-[10px] font-semibold uppercase text-zinc-950">
+                  <Badge className="absolute top-4 right-4 rounded-md bg-white text-[10px] font-semibold uppercase text-slate-950">
                     Active plan
                   </Badge>
                 ) : null}
@@ -104,7 +104,7 @@ export function PricingSection() {
                   {cta.disabled ? (
                     <Button
                       disabled
-                      className="w-full cursor-not-allowed rounded-md border border-zinc-700 bg-zinc-800 text-slate-400"
+                      className="w-full cursor-not-allowed rounded-md border border-sky-700 bg-sky-950/80 text-slate-400"
                     >
                       {cta.label}
                     </Button>

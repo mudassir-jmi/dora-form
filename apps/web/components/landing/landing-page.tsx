@@ -335,7 +335,7 @@ export function LandingPage() {
                             <article className="h-full rounded-md border border-sky-700 bg-sky-950/25 p-5 transition-colors hover:border-sky-500">
                                 <item.icon className="size-6 text-amber-300" stroke={1.5} />
                                 <h3 className="mt-4 text-base font-semibold text-white">{item.title}</h3>
-                                <p className="mt-2 text-sm leading-relaxed text-zinc-400">{item.description}</p>
+                                <p className="mt-2 text-sm leading-relaxed text-slate-300">{item.description}</p>
                             </article>
                         </SectionReveal>
                     ))}
@@ -361,7 +361,7 @@ export function LandingPage() {
                                     whileHover={{ y: -3 }}
                                     transition={{ duration: 0.2 }}
                                     className={cn(
-                                        "flex h-full flex-col justify-between rounded-lg border border-zinc-800 bg-zinc-900/50 hover:border-zinc-700 hover:shadow-lg hover:shadow-black/20",
+                                        "flex h-full flex-col justify-between rounded-lg border border-sky-700 bg-sky-950/30 hover:border-sky-500 hover:shadow-lg hover:shadow-sky-950/20",
                                         isCompact ? "min-h-[128px] p-4" : "min-h-[140px] p-5",
                                     )}
                                 >
@@ -369,7 +369,7 @@ export function LandingPage() {
                                         className={cn(
                                             "shrink-0",
                                             isCompact ? "size-5" : "size-6",
-                                            iconWarm ? "text-amber-400/90" : "text-rose-400/90",
+                                            iconWarm ? "text-amber-400/90" : "text-sky-300/90",
                                         )}
                                         stroke={1.5}
                                     />
@@ -415,7 +415,7 @@ export function LandingPage() {
                             <article className="h-full rounded-md border border-sky-700 bg-sky-950/25 p-5 transition-colors hover:border-sky-500">
                                 <item.icon className="size-5 text-amber-300/90" stroke={1.5} />
                                 <h3 className="mt-3 text-base font-semibold text-white">{item.title}</h3>
-                                <p className="mt-2 text-sm leading-relaxed text-zinc-400">{item.description}</p>
+                                <p className="mt-2 text-sm leading-relaxed text-slate-300">{item.description}</p>
                             </article>
                         </SectionReveal>
                     ))}
@@ -433,11 +433,11 @@ export function LandingPage() {
                 <SectionReveal className="mt-10 rounded-lg border border-sky-700 bg-sky-950/30 px-4 md:px-6">
                     <Accordion type="single" collapsible className="w-full">
                         {FAQ_ITEMS.map((item) => (
-                            <AccordionItem key={item.q} value={item.q} className="border-zinc-800">
-                                <AccordionTrigger className="py-4 text-left text-base font-medium text-zinc-200 hover:text-white hover:no-underline">
+                            <AccordionItem key={item.q} value={item.q} className="border-sky-700/40">
+                                <AccordionTrigger className="py-4 text-left text-base font-medium text-slate-200 hover:text-white hover:no-underline">
                                     {item.q}
                                 </AccordionTrigger>
-                                <AccordionContent className="pb-4 text-sm leading-relaxed text-zinc-400 md:text-[0.9375rem]">
+                                <AccordionContent className="pb-4 text-sm leading-relaxed text-slate-300 md:text-[0.9375rem]">
                                     {item.a}
                                 </AccordionContent>
                             </AccordionItem>

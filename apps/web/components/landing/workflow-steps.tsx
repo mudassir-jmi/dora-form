@@ -32,11 +32,11 @@ function WorkflowGlowTrack() {
       aria-hidden
     >
       {/* Base track */}
-      <div className="absolute inset-x-0 top-0 h-px bg-zinc-800" />
+      <div className="absolute inset-x-0 top-0 h-px bg-sky-700/30" />
 
       {/* Moving glow — travels step 1 → step 4 */}
       <motion.div
-        className="absolute top-0 h-0.5 w-[18%] -translate-y-1/2 rounded-full bg-gradient-to-r from-rose-500/20 via-rose-400 to-amber-400 shadow-[0_0_20px_rgba(251,113,133,0.55)]"
+        className="absolute top-0 h-0.5 w-[18%] -translate-y-1/2 rounded-full bg-gradient-to-r from-cyan-300/80 via-sky-300 to-amber-300 shadow-[0_0_20px_rgba(77,189,255,0.45)]"
         initial={{ left: "0%", opacity: 0 }}
         animate={{
           left: ["0%", "82%"],
@@ -87,7 +87,7 @@ function WorkflowMobileGlowTrack({
 
       {/* Moving vertical glow — driven by scroll */}
       <motion.div
-        className="absolute left-1/2 w-0.5 -translate-x-1/2 rounded-full bg-gradient-to-b from-rose-500/20 via-rose-400 to-amber-400 shadow-[0_0_20px_rgba(251,113,133,0.55)]"
+        className="absolute left-1/2 w-0.5 -translate-x-1/2 rounded-full bg-gradient-to-b from-cyan-300/80 via-sky-300 to-amber-300 shadow-[0_0_20px_rgba(77,189,255,0.45)]"
         style={{
           height: beamHeight,
           y: beamY,
@@ -115,7 +115,7 @@ function StepIcon({ delay, stepNumber }: { delay: number; stepNumber: number }) 
           fill="none"
           className="text-sky-400"
         >
-          <circle cx="12" cy="12" r="10" stroke="currentColor" strokeWidth="1.5" fill="rgba(244,63,94,0.12)" />
+          <circle cx="12" cy="12" r="10" stroke="currentColor" strokeWidth="1.5" fill="rgba(79,184,255,0.14)" />
           <path
             d="M8 12.5l2.5 2.5L16 9"
             stroke="currentColor"
@@ -126,7 +126,7 @@ function StepIcon({ delay, stepNumber }: { delay: number; stepNumber: number }) 
         </motion.svg>
       </div>
       <div className="block md:hidden">
-        <span className="text-sm font-bold text-rose-500">
+        <span className="text-sm font-bold text-sky-300">
           {stepNumber}
         </span>
       </div>
@@ -174,7 +174,7 @@ export function WorkflowSteps() {
         <LandingSectionHeader
           label="Workflow"
           title="From blank page to response insight"
-          labelClassName="text-rose-500"
+          labelClassName="text-sky-300"
         />
       </SectionReveal>
 
