@@ -50,12 +50,12 @@ export function PricingSection() {
             <SectionReveal key={plan.code} delay={index * 0.08}>
               <article
                 className={cn(
-                  "relative flex h-full min-h-[380px] flex-col justify-between rounded-lg border bg-zinc-900/60 p-6 transition-colors",
+                  "relative flex h-full min-h-[380px] flex-col justify-between rounded-lg border bg-sky-950/75 p-6 transition-colors",
                   isCurrent
                     ? "border-white/80"
                     : isRecommended
                       ? "border-rose-500/40 shadow-lg shadow-rose-950/20"
-                      : "border-zinc-800 hover:border-zinc-700",
+                      : "border-sky-700 hover:border-sky-500",
                 )}
               >
                 {isRecommended ? (
@@ -72,7 +72,7 @@ export function PricingSection() {
                 <div className="space-y-5">
                   <div>
                     <h3 className="text-xl font-bold text-white">{plan.name}</h3>
-                    <p className="mt-2 text-sm leading-relaxed text-zinc-400 md:text-[0.9375rem]">
+                    <p className="mt-2 text-sm leading-relaxed text-slate-300 md:text-[0.9375rem]">
                       {plan.description}
                     </p>
                   </div>
@@ -80,21 +80,21 @@ export function PricingSection() {
                   <div>
                     <span className="text-4xl font-extrabold text-white">{plan.priceLabel}</span>
                     {plan.period ? (
-                      <span className="text-sm text-zinc-500">{plan.period}</span>
+                      <span className="text-sm text-slate-400">{plan.period}</span>
                     ) : null}
                   </div>
 
-                  <ul className="space-y-3 border-t border-zinc-800 pt-4 text-sm text-zinc-300">
+                  <ul className="space-y-3 border-t border-sky-700 pt-4 text-sm text-slate-200">
                     <li className="flex items-start gap-2">
-                      <IconCheck className="mt-0.5 size-4 shrink-0 text-rose-500" />
+                      <IconCheck className="mt-0.5 size-4 shrink-0 text-amber-300" />
                       <span>{plan.formLimit}</span>
                     </li>
                     <li className="flex items-start gap-2">
-                      <IconCheck className="mt-0.5 size-4 shrink-0 text-rose-500" />
+                      <IconCheck className="mt-0.5 size-4 shrink-0 text-amber-300" />
                       <span>{plan.submissionLimit}</span>
                     </li>
                     <li className="flex items-start gap-2">
-                      <IconCheck className="mt-0.5 size-4 shrink-0 text-rose-500" />
+                      <IconCheck className="mt-0.5 size-4 shrink-0 text-amber-300" />
                       <span>{plan.feature}</span>
                     </li>
                   </ul>
@@ -104,7 +104,7 @@ export function PricingSection() {
                   {cta.disabled ? (
                     <Button
                       disabled
-                      className="w-full cursor-not-allowed rounded-md border border-zinc-700 bg-zinc-800 text-zinc-500"
+                      className="w-full cursor-not-allowed rounded-md border border-zinc-700 bg-zinc-800 text-slate-400"
                     >
                       {cta.label}
                     </Button>
@@ -114,7 +114,7 @@ export function PricingSection() {
                       className={cn(
                         "w-full rounded-md font-semibold",
                         plan.code === "free"
-                          ? "border border-zinc-700 bg-transparent text-zinc-200 hover:bg-zinc-800"
+                          ? "border border-sky-700 bg-transparent text-slate-200 hover:bg-sky-950"
                           : "cta-primary",
                       )}
                     >
@@ -128,7 +128,7 @@ export function PricingSection() {
         })}
       </div>
 
-      <p className="mt-8 text-center text-sm text-zinc-500">
+      <p className="mt-8 text-center text-sm text-slate-400">
         Upgrade anytime from billing. Cancel or change plans from your dashboard.
       </p>
     </section>

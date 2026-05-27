@@ -46,72 +46,72 @@
 
 :root {
   --radius: 0.75rem;
-  --background: #0d4c9a;
+  --background: #0c3f80;
   --foreground: #f8fafc;
-  --card: #e7f2ff;
+  --card: #dbeeff;
   --card-foreground: #0f172a;
   --popover: #ffffff;
   --popover-foreground: #0f172a;
-  --primary: #0ea5e9;
-  --primary-foreground: #ffffff;
-  --secondary: #0284c7;
-  --secondary-foreground: #ffffff;
-  --muted: #dbeafe;
+  --primary: #4fb8ff;
+  --primary-foreground: #0f172a;
+  --secondary: #ffcd3c;
+  --secondary-foreground: #0f172a;
+  --muted: #d8eeff;
   --muted-foreground: #0f172a;
-  --accent: #fbbf24;
+  --accent: #ffe066;
   --accent-foreground: #0f172a;
-  --destructive: #ef4444;
-  --border: #93c5fd;
-  --input: #e0f2fe;
-  --ring: #7dd3fc;
+  --destructive: #f97316;
+  --border: #82b8ff;
+  --input: #d8edff;
+  --ring: #a9e4ff;
   --chart-1: #ffffff;
-  --chart-2: #bae6fd;
-  --chart-3: #38bdf8;
-  --chart-4: #0ea5e9;
-  --chart-5: #2563eb;
-  --sidebar: #0f4fc0;
+  --chart-2: #b8e7ff;
+  --chart-3: #60c2ff;
+  --chart-4: #3f8cff;
+  --chart-5: #1f56b8;
+  --sidebar: #0b3b76;
   --sidebar-foreground: #f8fafc;
   --sidebar-primary: #ffffff;
   --sidebar-primary-foreground: #0f172a;
-  --sidebar-accent: #f59e0b;
+  --sidebar-accent: #ffd03f;
   --sidebar-accent-foreground: #0f172a;
-  --sidebar-border: #7dd3fc;
-  --sidebar-ring: #38bdf8;
+  --sidebar-border: #7cc0ff;
+  --sidebar-ring: #5ec6ff;
 }
 
 .dark {
   --radius: 0.75rem;
-  --background: #0d4c9a;
+  --background: #0c3f80;
   --foreground: #f8fafc;
-  --card: #e7f2ff;
+  --card: #dbeeff;
   --card-foreground: #0f172a;
   --popover: #ffffff;
   --popover-foreground: #0f172a;
-  --primary: #0ea5e9;
-  --primary-foreground: #ffffff;
-  --secondary: #0284c7;
-  --secondary-foreground: #ffffff;
-  --muted: #dbeafe;
+  --primary: #4fb8ff;
+  --primary-foreground: #0f172a;
+  --secondary: #ffcd3c;
+  --secondary-foreground: #0f172a;
+  --muted: #d8eeff;
   --muted-foreground: #0f172a;
-  --accent: #fbbf24;
+  --accent: #ffe066;
   --accent-foreground: #0f172a;
-  --destructive: #ef4444;
-  --border: #93c5fd;
-  --input: #e0f2fe;
-  --ring: #7dd3fc;
+  --destructive: #f97316;
+  --border: #82b8ff;
+  --input: #d8edff;
+  --ring: #a9e4ff;
   --chart-1: #ffffff;
-  --chart-2: #bae6fd;
-  --chart-3: #38bdf8;
-  --chart-4: #0ea5e9;
-  --chart-5: #2563eb;
-  --sidebar: #0f4fc0;
+  --chart-2: #b8e7ff;
+  --chart-3: #60c2ff;
+  --chart-4: #3f8cff;
+  --chart-5: #1f56b8;
+  --sidebar: #0b3b76;
   --sidebar-foreground: #f8fafc;
   --sidebar-primary: #ffffff;
   --sidebar-primary-foreground: #0f172a;
-  --sidebar-accent: #f59e0b;
+  --sidebar-accent: #ffd03f;
   --sidebar-accent-foreground: #0f172a;
-  --sidebar-border: #7dd3fc;
-  --sidebar-ring: #38bdf8;
+  --sidebar-border: #7cc0ff;
+  --sidebar-ring: #5ec6ff;
 }
 
 @layer base {
@@ -130,11 +130,11 @@
 
 /* Landing & billing shared utilities */
 .hex-grid-bg {
-  background-color: #0f4fc0;
+  background-color: #0d3c72;
   background-image:
-    radial-gradient(circle at 15% 20%, rgba(255, 255, 255, 0.18), transparent 26%),
-    radial-gradient(circle at 80% 10%, rgba(255, 255, 255, 0.12), transparent 18%),
-    radial-gradient(circle at 50% 80%, rgba(219, 234, 254, 0.16), transparent 24%),
+    radial-gradient(circle at 14% 22%, rgba(255, 205, 60, 0.18), transparent 24%),
+    radial-gradient(circle at 78% 12%, rgba(255, 255, 255, 0.14), transparent 20%),
+    radial-gradient(circle at 48% 80%, rgba(77, 189, 255, 0.18), transparent 24%),
     linear-gradient(to right, rgba(255, 255, 255, 0.08) 1px, transparent 1px),
     linear-gradient(to bottom, rgba(255, 255, 255, 0.08) 1px, transparent 1px);
   background-size: 72px 72px, 72px 72px, 100px 100px, 48px 48px, 48px 48px;
@@ -147,24 +147,24 @@
 }
 
 .cta-primary {
-  background: linear-gradient(135deg, #38bdf8 0%, #0ea5e9 100%);
-  color: #ffffff;
-  border: 1px solid rgba(56, 189, 248, 0.35);
+  background: linear-gradient(135deg, #4fb8ff 0%, #ffe066 100%);
+  color: #0f172a;
+  border: 1px solid rgba(255, 224, 102, 0.35);
 }
 
 .cta-primary:hover {
-  background: linear-gradient(135deg, #7dd3fc 0%, #38bdf8 100%);
-  color: #ffffff;
+  background: linear-gradient(135deg, #7fd8ff 0%, #fff49d 100%);
+  color: #0f172a;
 }
 
 .val-btn-red {
-  background: linear-gradient(135deg, #fbbf24 0%, #f97316 100%);
+  background: linear-gradient(135deg, #ffcd3c 0%, #fb8c00 100%);
   color: #0f172a;
-  border: 1px solid rgba(251, 191, 36, 0.35);
+  border: 1px solid rgba(255, 205, 60, 0.35);
 }
 
 .val-btn-red:hover {
-  background: linear-gradient(135deg, #fde68a 0%, #fb923c 100%);
+  background: linear-gradient(135deg, #fff7ae 0%, #ffb347 100%);
 }
 
 .accent-emerald {
@@ -178,15 +178,15 @@
 }
 
 .doraemon-hero-bg {
-  background-color: #0e4c8f;
+  background-color: #0b3674;
   background-image:
-    radial-gradient(circle at 16% 18%, rgba(255, 255, 255, 0.22), transparent 20%),
-    radial-gradient(circle at 78% 12%, rgba(249, 115, 22, 0.18), transparent 18%),
-    radial-gradient(circle at 50% 78%, rgba(56, 189, 248, 0.18), transparent 24%),
-    linear-gradient(125deg, rgba(59, 130, 246, 0.18), transparent 40%),
+    radial-gradient(circle at 15% 18%, rgba(255, 255, 255, 0.24), transparent 18%),
+    radial-gradient(circle at 82% 14%, rgba(255, 205, 60, 0.20), transparent 18%),
+    radial-gradient(circle at 52% 78%, rgba(77, 189, 255, 0.18), transparent 22%),
+    linear-gradient(135deg, rgba(46, 161, 255, 0.22), transparent 38%),
     linear-gradient(to right, rgba(255, 255, 255, 0.06) 1px, transparent 1px),
     linear-gradient(to bottom, rgba(255, 255, 255, 0.06) 1px, transparent 1px);
-  background-size: 80px 80px, 100px 100px, 120px 120px, 200px 200px, 48px 48px, 48px 48px;
+  background-size: 80px 80px, 100px 100px, 120px 120px, 220px 220px, 48px 48px, 48px 48px;
 }
 
 

@@ -35,7 +35,7 @@ import { cn } from "~/lib/utils";
 function BrandMark() {
   return (
     <span className="flex size-7 items-center justify-center rounded-md border border-rose-500/30 bg-rose-500/10">
-      <IconForms className="size-4 text-rose-500" stroke={1.75} />
+      <IconForms className="size-4 text-sky-500" stroke={1.75} />
     </span>
   );
 }
@@ -105,7 +105,7 @@ export function MainNavbar() {
       <motion.div
         layout
         className={cn(
-          "pointer-events-auto mx-auto flex max-w-6xl items-center justify-between gap-4 border border-zinc-800 bg-zinc-950/90 shadow-lg shadow-black/20 backdrop-blur-md transition-colors",
+          "pointer-events-auto mx-auto flex max-w-6xl items-center justify-between gap-4 border border-sky-700 bg-sky-950/88 shadow-lg shadow-sky-950/40 backdrop-blur-md transition-colors",
           scrolled ? "rounded-md px-3 py-2" : "rounded-lg px-4 py-3",
         )}
         animate={{
@@ -129,7 +129,7 @@ export function MainNavbar() {
             variant="outline"
             size="sm"
             asChild
-            className="hidden border-zinc-700 bg-transparent text-zinc-300 hover:bg-zinc-900 hover:text-white sm:inline-flex"
+            className="hidden border-sky-600 bg-transparent text-slate-100 hover:bg-sky-950 hover:text-white sm:inline-flex"
           >
             <Link href="/explore">Explore</Link>
           </Button>
@@ -139,18 +139,18 @@ export function MainNavbar() {
               <DropdownMenuTrigger asChild>
                 <button
                   type="button"
-                  className="flex size-9 items-center justify-center rounded-full border border-zinc-700 bg-zinc-900 outline-none ring-rose-500/40 focus-visible:ring-2"
+                  className="flex size-9 items-center justify-center rounded-full border border-sky-600 bg-sky-950 outline-none ring-sky-300/40 focus-visible:ring-2"
                   aria-label="Account menu"
                 >
                   <Avatar className="size-8">
                     <AvatarImage src={user?.profileImageUrl ?? ""} alt={user?.fullName ?? ""} />
-                    <AvatarFallback className="bg-zinc-800 text-xs text-zinc-200">
+                    <AvatarFallback className="bg-sky-800 text-xs text-slate-100">
                       {initials}
                     </AvatarFallback>
                   </Avatar>
                 </button>
               </DropdownMenuTrigger>
-              <DropdownMenuContent align="end" className="w-48 border-zinc-800 bg-zinc-950">
+              <DropdownMenuContent align="end" className="w-48 border-sky-700 bg-sky-950">
                 <DropdownMenuItem asChild>
                   <Link href="/dashboard" className="cursor-pointer">
                     <IconLayoutDashboard className="mr-2 size-4" />
@@ -163,7 +163,7 @@ export function MainNavbar() {
                     Account
                   </Link>
                 </DropdownMenuItem>
-                <DropdownMenuSeparator className="bg-zinc-800" />
+                <DropdownMenuSeparator className="bg-sky-700" />
                 <DropdownMenuItem
                   onClick={() => {
                     signOut();
@@ -194,7 +194,7 @@ export function MainNavbar() {
                 <IconMenu2 className="size-4" />
               </Button>
             </SheetTrigger>
-            <SheetContent side="right" className="border-zinc-800 bg-zinc-950 w-[min(100vw-2rem,320px)]">
+            <SheetContent side="right" className="border-sky-700 bg-sky-950 w-[min(100vw-2rem,320px)]">
               <SheetHeader>
                 <SheetTitle className="flex items-center gap-2 text-left text-white">
                   <BrandMark />
@@ -203,7 +203,7 @@ export function MainNavbar() {
               </SheetHeader>
               <div className="flex-1 overflow-y-auto px-5 pb-8 flex flex-col gap-6 mt-4">
                 <NavLinks onNavigate={() => setSheetOpen(false)} />
-                <div className="flex flex-col gap-2 border-t border-zinc-800 pt-6">
+                <div className="flex flex-col gap-2 border-t border-sky-700 pt-6">
                   <Button variant="outline" asChild className="border-zinc-700">
                     <Link href="/explore" onClick={() => setSheetOpen(false)}>
                       Explore

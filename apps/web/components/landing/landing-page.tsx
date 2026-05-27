@@ -304,7 +304,7 @@ export function LandingPage() {
                         initial={{ opacity: 0 }}
                         animate={{ opacity: 1 }}
                         transition={{ delay: 0.25 }}
-                        className="mt-10 flex flex-wrap items-center justify-center gap-x-6 gap-y-2 text-xs text-slate-200/80"
+                        className="mt-10 flex flex-wrap items-center justify-center gap-x-6 gap-y-2 text-xs text-slate-200/70"
                     >
                         {HERO_BENEFITS.map((b) => (
                             <li key={b} className="flex items-center gap-1.5">
@@ -332,8 +332,8 @@ export function LandingPage() {
                 <div className="mt-12 grid gap-4 sm:grid-cols-2 lg:grid-cols-4">
                     {PAIN_POINTS.map((item, i) => (
                         <SectionReveal key={item.title} delay={i * 0.06}>
-                            <article className="h-full rounded-md border border-zinc-800 bg-zinc-900/40 p-5 transition-colors hover:border-zinc-700">
-                                <item.icon className="size-6 text-rose-500" stroke={1.5} />
+                            <article className="h-full rounded-md border border-sky-700 bg-sky-950/25 p-5 transition-colors hover:border-sky-500">
+                                <item.icon className="size-6 text-amber-300" stroke={1.5} />
                                 <h3 className="mt-4 text-base font-semibold text-white">{item.title}</h3>
                                 <p className="mt-2 text-sm leading-relaxed text-zinc-400">{item.description}</p>
                             </article>
@@ -384,7 +384,7 @@ export function LandingPage() {
                                         </h3>
                                         <p
                                             className={cn(
-                                                "mt-1.5 leading-relaxed text-zinc-400",
+                                                "mt-1.5 leading-relaxed text-slate-300",
                                                 isCompact ? "text-xs" : "text-sm",
                                             )}
                                         >
@@ -412,8 +412,8 @@ export function LandingPage() {
                 <div className="mt-12 grid gap-4 sm:grid-cols-2 lg:grid-cols-4">
                     {USE_CASES.map((item, index) => (
                         <SectionReveal key={item.title} delay={index * 0.04}>
-                            <article className="h-full rounded-md border border-zinc-800 bg-zinc-900/40 p-5 transition-colors hover:border-zinc-700">
-                                <item.icon className="size-5 text-rose-500/90" stroke={1.5} />
+                            <article className="h-full rounded-md border border-sky-700 bg-sky-950/25 p-5 transition-colors hover:border-sky-500">
+                                <item.icon className="size-5 text-amber-300/90" stroke={1.5} />
                                 <h3 className="mt-3 text-base font-semibold text-white">{item.title}</h3>
                                 <p className="mt-2 text-sm leading-relaxed text-zinc-400">{item.description}</p>
                             </article>
@@ -430,7 +430,7 @@ export function LandingPage() {
                     <LandingSectionHeader label="FAQ" title="Common questions" />
                 </SectionReveal>
 
-                <SectionReveal className="mt-10 rounded-lg border border-zinc-800 bg-zinc-900/40 px-4 md:px-6">
+                <SectionReveal className="mt-10 rounded-lg border border-sky-700 bg-sky-950/30 px-4 md:px-6">
                     <Accordion type="single" collapsible className="w-full">
                         {FAQ_ITEMS.map((item) => (
                             <AccordionItem key={item.q} value={item.q} className="border-zinc-800">
@@ -448,12 +448,12 @@ export function LandingPage() {
 
             {/* Final CTA */}
             <section id="cta" className="landing-section mx-auto max-w-6xl px-4 pb-8">
-                <div className="hex-grid-bg rounded-lg border border-zinc-800 bg-zinc-900/60 px-6 py-14 text-center md:px-12 md:py-16">
+                <div className="hex-grid-bg rounded-lg border border-sky-700 bg-sky-950/60 px-6 py-14 text-center md:px-12 md:py-16">
                     <SectionReveal>
                         <h2 className="text-2xl font-bold tracking-tight text-white sm:text-3xl md:text-4xl">
                             Start blank. Get answers.
                         </h2>
-                        <p className="mx-auto mt-4 max-w-lg text-base text-zinc-400">
+                        <p className="mx-auto mt-4 max-w-lg text-base text-slate-300">
                             Join with DoraForm to launch faster and review responses in one place.
                         </p>
                         <LandingCtas className="mt-8" />

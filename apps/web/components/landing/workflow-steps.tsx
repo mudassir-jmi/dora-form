@@ -83,7 +83,7 @@ function WorkflowMobileGlowTrack({
       aria-hidden
     >
       {/* Base track */}
-      <div className="absolute inset-0 bg-zinc-800" />
+      <div className="absolute inset-0 bg-sky-700/20" />
 
       {/* Moving vertical glow — driven by scroll */}
       <motion.div
@@ -104,7 +104,7 @@ function StepIcon({ delay, stepNumber }: { delay: number; stepNumber: number }) 
       whileInView={{ scale: 1, opacity: 1 }}
       viewport={{ once: true }}
       transition={{ duration: 0.4, delay }}
-      className="step-icon-container relative z-10 flex size-12 shrink-0 items-center justify-center rounded-md border border-zinc-800 bg-zinc-900 shadow-[0_0_0_1px_rgba(255,255,255,0.04)]"
+      className="step-icon-container relative z-10 flex size-12 shrink-0 items-center justify-center rounded-md border border-sky-700 bg-sky-950 shadow-[0_0_0_1px_rgba(255,255,255,0.06)]"
     >
       {/* On desktop (md), show the checkmark SVG. On mobile, show the step number. */}
       <div className="hidden md:block">
@@ -113,7 +113,7 @@ function StepIcon({ delay, stepNumber }: { delay: number; stepNumber: number }) 
           height="22"
           viewBox="0 0 24 24"
           fill="none"
-          className="text-rose-500"
+          className="text-sky-400"
         >
           <circle cx="12" cy="12" r="10" stroke="currentColor" strokeWidth="1.5" fill="rgba(244,63,94,0.12)" />
           <path
@@ -188,11 +188,11 @@ export function WorkflowSteps() {
               <li className="relative flex flex-row items-start gap-4 text-left md:flex-col md:items-start md:text-left">
                 <StepIcon delay={0.08 + i * 0.1} stepNumber={i + 1} />
                 <div className="flex-1">
-                  <span className="mb-1 block text-[11px] font-bold uppercase tracking-widest text-zinc-500 md:mb-1.5 md:mt-4">
+                  <span className="mb-1 block text-[11px] font-bold uppercase tracking-widest text-sky-200 md:mb-1.5 md:mt-4">
                     Step {i + 1}
                   </span>
                   <h3 className="text-lg font-semibold text-white">{step.title}</h3>
-                  <p className="mt-2 text-sm leading-relaxed text-zinc-400 md:text-[0.9375rem]">
+                  <p className="mt-2 text-sm leading-relaxed text-slate-300 md:text-[0.9375rem]">
                     {step.description}
                   </p>
                 </div>

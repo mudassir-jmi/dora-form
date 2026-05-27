@@ -27,22 +27,22 @@ export function ProductPreview() {
       transition={{ duration: 0.6, delay: 0.25, ease: [0.22, 1, 0.36, 1] }}
       className="relative mx-auto mt-12 w-full max-w-4xl text-left"
     >
-      <div className="overflow-hidden rounded-lg border border-border bg-background shadow-2xl shadow-black/40">
+      <div className="overflow-hidden rounded-lg border border-sky-700 bg-sky-950/70 shadow-2xl shadow-sky-950/30">
         {/* Builder header — matches form-builder-console */}
-        <div className="flex flex-wrap items-center justify-between gap-3 border-b border-border bg-card px-4 py-3 sm:px-5">
+        <div className="flex flex-wrap items-center justify-between gap-3 border-b border-sky-700 bg-sky-900/80 px-4 py-3 sm:px-5">
           <div className="flex min-w-0 items-center gap-2">
-            <span className="flex size-8 items-center justify-center rounded-md border border-border bg-muted/30 text-muted-foreground">
+            <span className="flex size-8 items-center justify-center rounded-md border border-sky-700 bg-sky-500/10 text-sky-200">
               <IconArrowLeft className="size-4" />
             </span>
             <div className="min-w-0">
-              <p className="truncate text-sm font-semibold text-foreground">
+              <p className="truncate text-sm font-semibold text-white">
                 Campus placement survey
               </p>
-              <p className="text-[11px] text-muted-foreground">Form builder</p>
+              <p className="text-[11px] text-slate-300">Form builder</p>
             </div>
           </div>
           <div className="flex items-center gap-2">
-            <span className="rounded-md border border-border bg-background px-3 py-1.5 text-xs text-foreground">
+            <span className="rounded-md border border-border bg-background px-3 py-1.5 text-xs text-white">
               Published
             </span>
             <span className="flex items-center gap-1 rounded-md border border-border bg-card px-3 py-1.5 text-xs text-muted-foreground">
@@ -54,14 +54,14 @@ export function ProductPreview() {
 
         <div className="grid gap-0 md:grid-cols-[minmax(0,280px)_1fr]">
           {/* Form Details sidebar */}
-          <aside className="border-b border-border bg-card p-4 md:border-b-0 md:border-r md:p-5">
-            <h3 className="border-b border-border pb-3 text-sm font-medium text-foreground">
+          <aside className="border-b border-sky-700 bg-sky-900/75 p-4 md:border-b-0 md:border-r md:p-5">
+            <h3 className="border-b border-border pb-3 text-sm font-medium text-white">
               Form Details
             </h3>
             <div className="mt-4 space-y-4">
               <div className="space-y-1.5">
                 <p className="text-xs text-muted-foreground">Name</p>
-                <div className="h-9 rounded-md border border-input bg-background px-3 text-xs leading-9 text-foreground">
+                <div className="h-9 rounded-md border border-input bg-background px-3 text-xs leading-9 text-white">
                   Campus placement survey
                 </div>
               </div>
@@ -71,9 +71,9 @@ export function ProductPreview() {
                   Collect student details for the 2026 placement drive.
                 </div>
               </div>
-              <div className="flex items-center justify-between rounded-lg border border-border bg-background p-3">
+              <div className="flex items-center justify-between rounded-lg border border-sky-700 bg-sky-950/40 p-3">
                 <div className="pr-2">
-                  <p className="text-xs font-medium text-foreground">Public Explore Listing</p>
+                  <p className="text-xs font-medium text-white">Public Explore Listing</p>
                   <p className="text-[11px] leading-snug text-muted-foreground">
                     Allow others to discover this form in Explore.
                   </p>
@@ -89,10 +89,10 @@ export function ProductPreview() {
           </aside>
 
           {/* Questions panel */}
-          <section className="bg-background p-4 md:p-5">
+          <section className="bg-sky-950/70 p-4 md:p-5">
             <div className="flex items-center justify-between border-b border-border pb-3">
-              <h2 className="text-base font-semibold tracking-tight text-foreground">Questions</h2>
-              <span className="inline-flex items-center gap-1 rounded-md border border-border bg-card px-2.5 py-1 text-xs font-medium text-foreground">
+              <h2 className="text-base font-semibold tracking-tight text-white">Questions</h2>
+              <span className="inline-flex items-center gap-1 rounded-md border border-border bg-card px-2.5 py-1 text-xs font-medium text-white">
                 <IconPlus className="size-3.5" />
                 Add Question
               </span>
@@ -102,13 +102,13 @@ export function ProductPreview() {
               {MOCK_QUESTIONS.map((q, idx) => (
                 <li
                   key={q.label}
-                  className="flex items-center justify-between gap-3 rounded-lg border border-border bg-card p-3.5 transition-colors hover:border-zinc-600"
+                  className="flex items-center justify-between gap-3 rounded-lg border border-sky-700 bg-sky-950/60 p-3.5 transition-colors hover:border-sky-500"
                 >
                   <div className="flex min-w-0 items-start gap-2">
                     <IconGripVertical className="mt-0.5 size-4 shrink-0 text-muted-foreground" />
                     <div className="min-w-0">
                       <p className="text-[10px] text-muted-foreground">Question {idx + 1}</p>
-                      <p className="truncate text-sm font-medium text-foreground">{q.label}</p>
+                      <p className="truncate text-sm font-medium text-white">{q.label}</p>
                       <div className="mt-1 flex flex-wrap items-center gap-2">
                         <Badge variant="secondary" className="text-[10px]">
                           {q.type}
@@ -124,7 +124,7 @@ export function ProductPreview() {
                     </div>
                   </div>
                   <div className="flex shrink-0 items-center gap-1">
-                    <span className="inline-flex items-center rounded-md border border-border px-2 py-1 text-[10px] text-muted-foreground">
+                    <span className="inline-flex items-center rounded-md border border-sky-700 px-2 py-1 text-[10px] text-slate-300">
                       <IconEdit className="mr-1 size-3" />
                       Edit
                     </span>
@@ -136,7 +136,7 @@ export function ProductPreview() {
           </section>
         </div>
       </div>
-      <p className="mt-3 text-center text-[11px] text-zinc-600">
+      <p className="mt-3 text-center text-[11px] text-slate-400">
         The same builder you use in the dashboard—form details on the left, questions on the right.
       </p>
     </motion.div>
