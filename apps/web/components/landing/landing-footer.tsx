@@ -17,11 +17,11 @@ export function LandingFooter() {
   ];
 
   return (
-    <footer className="border-t border-zinc-800 bg-zinc-950">
+    <footer className="border-t border-sky-800 bg-sky-950">
       <div className="mx-auto flex max-w-6xl flex-col gap-8 px-4 py-12 md:flex-row md:justify-between">
         <div className="max-w-sm space-y-3">
           <p className="text-sm font-semibold text-white">DoraForm</p>
-          <p className="text-sm leading-relaxed text-zinc-500">
+          <p className="text-sm leading-relaxed text-slate-300">
             Modern forms for teams who need to launch fast, validate answers, and understand
             responses without workflow sprawl.
           </p>
@@ -29,7 +29,7 @@ export function LandingFooter() {
 
         <div className="flex flex-wrap gap-12">
           <div>
-            <p className="text-xs font-semibold uppercase tracking-wider text-zinc-500">
+            <p className="text-xs font-semibold uppercase tracking-wider text-sky-200">
               Product
             </p>
             <ul className="mt-3 space-y-2">
@@ -37,7 +37,7 @@ export function LandingFooter() {
                 <li key={link.href}>
                   <a
                     href={link.href}
-                    className="text-sm text-zinc-400 transition-colors hover:text-white"
+                    className="text-sm text-slate-200 transition-colors hover:text-white"
                   >
                     {link.label}
                   </a>
@@ -46,12 +46,12 @@ export function LandingFooter() {
             </ul>
           </div>
           <div>
-            <p className="text-xs font-semibold uppercase tracking-wider text-zinc-500">App</p>
+            <p className="text-xs font-semibold uppercase tracking-wider text-sky-200">App</p>
             <ul className="mt-3 space-y-2">
               <li>
                 <Link
                   href="/explore"
-                  className="text-sm text-zinc-400 transition-colors hover:text-white"
+                  className="text-sm text-slate-200 transition-colors hover:text-white"
                 >
                   Explore
                 </Link>
@@ -61,7 +61,7 @@ export function LandingFooter() {
                   <li>
                     <Link
                       href="/dashboard"
-                      className="text-sm text-zinc-400 transition-colors hover:text-white"
+                      className="text-sm text-slate-200 transition-colors hover:text-white"
                     >
                       Dashboard
                     </Link>
@@ -69,7 +69,7 @@ export function LandingFooter() {
                   <li>
                     <Link
                       href="/dashboard/forms"
-                      className="text-sm text-zinc-400 transition-colors hover:text-white"
+                      className="text-sm text-slate-200 transition-colors hover:text-white"
                     >
                       Forms
                     </Link>
@@ -79,7 +79,7 @@ export function LandingFooter() {
                 <li>
                   <Link
                     href={getSignInHref("/dashboard/forms")}
-                    className="text-sm text-zinc-400 transition-colors hover:text-white"
+                    className="text-sm text-slate-200 transition-colors hover:text-white"
                   >
                     Sign in
                   </Link>
@@ -89,7 +89,7 @@ export function LandingFooter() {
           </div>
         </div>
       </div>
-      <div className="border-t border-zinc-800/80 py-4 text-center text-xs text-zinc-600">
+      <div className="border-t border-sky-800/80 py-4 text-center text-xs text-slate-300">
         © {new Date().getFullYear()} DoraForm. All rights reserved.
       </div>
     </footer>

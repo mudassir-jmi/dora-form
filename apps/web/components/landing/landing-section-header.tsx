@@ -24,14 +24,14 @@ export function LandingSectionHeader({
         className,
       )}
     >
-      <p className={cn("text-xs font-semibold uppercase tracking-widest", labelClassName || "text-rose-500")}>
+      <p className={cn("text-xs font-semibold uppercase tracking-widest", labelClassName || "text-sky-300")}>
         {label}
       </p>
       <h2 className="mt-3 text-3xl font-bold tracking-tight text-white sm:text-4xl md:text-[2.5rem] md:leading-tight">
         {title}
       </h2>
       {description ? (
-        <p className="mt-4 text-base leading-relaxed text-zinc-400">{description}</p>
+        <p className="mt-4 text-base leading-relaxed text-slate-200">{description}</p>
       ) : null}
     </div>
   );

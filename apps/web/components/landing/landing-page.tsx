@@ -276,9 +276,9 @@ export function LandingPage() {
                         transition={{ duration: 0.75, delay: 0.1, ease: [0.22, 1, 0.36, 1] }}
                         className="mx-auto mt-5 max-w-3xl text-2xl font-bold leading-tight tracking-tight sm:text-3xl md:text-5xl md:leading-[1.2]"
                     >
-                        <span className="block text-white">Create forms from zero</span>
+                        <span className="block text-white">Doraemon-style forms from zero</span>
                         <span className="mt-2 block text-sky-200">
-                            Limitless. Flexible. Customizable.
+                            Bright. Playful. Powerful.
                         </span>
                     </motion.h1>
                     <motion.p

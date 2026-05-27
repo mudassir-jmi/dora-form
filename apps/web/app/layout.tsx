@@ -13,7 +13,7 @@ const geistMono = localFont({
 });
 
 export const metadata: Metadata = {
-    title: "DoraFormm",
+    title: "DoraForm",
     description: "Cartoon-inspired form builder with Doraemon-style UI.",
 };
 
